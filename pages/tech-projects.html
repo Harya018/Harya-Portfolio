@@ -1,0 +1,169 @@
+<!-- TECH PROJECTS PAGE — pages/tech-projects.html -->
+
+<div class="container section">
+
+  <!-- Page Header -->
+  <div class="section-header reveal">
+    <p style="color:var(--accent-blue);font-size:0.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Portfolio</p>
+    <h1 class="section-title">Tech <span>Projects</span></h1>
+    <div class="title-underline"></div>
+    <p class="section-subtitle" style="margin-top:0.75rem;">Real-world AI/ML and software engineering projects</p>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="python">Python</button>
+    <button class="filter-btn" data-filter="ai/ml">AI/ML</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="llm">LLM</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+
+    <!-- PROJECT 1: Jeeva Raksha -->
+    <article class="project-card reveal" data-tags="python ai/ml llm flask computer-vision">
+      <div class="ribbon">Hackathon</div>
+      <div class="project-img">
+        <!-- Upload Jeeva Raksha project image here -->
+        <img src="images/jeeva-raksha.jpg" alt="Jeeva Raksha AI Animal Rescue Platform"
+             onerror="this.parentElement.innerHTML='<div style=\'display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-dim);padding:2rem;\'><span style=\'font-size:2.5rem;\'>🐾</span><span style=\'font-size:0.8rem;\'>Jeeva Raksha</span></div>';" />
+      </div>
+      <div class="project-body">
+        <h3>Jeeva Raksha: AI Animal Rescue Dispatch</h3>
+        <p>AI-powered rescue dispatch platform connecting citizens reporting injured animals with nearby rescuers via chatbot (text, voice, and image input).</p>
+        <div class="tags-wrap">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">GPS Tracking</span>
+          <span class="tag">Python</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Flask</span>
+        </div>
+        <div class="project-actions">
+          <!-- Add GitHub link here -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="github-jeeva">
+            🐙 GitHub <!-- Replace with actual link -->
+          </a>
+          <button class="btn btn-sm btn-expand" style="background:rgba(0,102,255,0.1);border:1px solid var(--border-subtle);color:var(--text-muted);border-radius:var(--radius-full);cursor:pointer;font-family:var(--font-body);">
+            View Details ▼
+          </button>
+        </div>
+        <div class="expand-panel">
+          <h5>Architecture</h5>
+          <p>Multi-modal chatbot frontend (React/HTML) → Flask REST API → LLM router → Computer Vision model (YOLOv8) for animal detection → GPS-based rescuer matching → Notification pipeline.</p>
+          <h5>Key Challenges</h5>
+          <p>Real-time geolocation matching with low latency; multi-modal input fusion (text + image + voice); ensuring LLM responses stay contextually grounded to rescue scenarios.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: Multi-Agent AI Workflow -->
+    <article class="project-card reveal reveal-delay-1" data-tags="python ai/ml llm multi-agent automation">
+      <div class="ribbon ribbon-gold">Featured</div>
+      <div class="project-img">
+        <!-- Upload Multi-Agent project image here -->
+        <img src="images/multi-agent.jpg" alt="Multi-Agent AI Workflow Framework"
+             onerror="this.parentElement.innerHTML='<div style=\'display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-dim);padding:2rem;\'><span style=\'font-size:2.5rem;\'>🤖</span><span style=\'font-size:0.8rem;\'>Multi-Agent</span></div>';" />
+      </div>
+      <div class="project-body">
+        <h3>Multi-Agent AI Workflow Framework</h3>
+        <p>Modular multi-agent architecture supporting planning, reasoning, and sequential task execution. Achieved ~25% faster task completion vs traditional rule-based workflows.</p>
+        <div class="tags-wrap">
+          <span class="tag">Python</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">LLM APIs</span>
+          <span class="tag">Multi-Agent</span>
+          <span class="tag">Automation</span>
+        </div>
+        <div class="project-actions">
+          <!-- Add GitHub link here -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="github-multiagent">
+            🐙 GitHub <!-- Replace with actual link -->
+          </a>
+          <button class="btn btn-sm btn-expand" style="background:rgba(0,102,255,0.1);border:1px solid var(--border-subtle);color:var(--text-muted);border-radius:var(--radius-full);cursor:pointer;font-family:var(--font-body);">
+            View Details ▼
+          </button>
+        </div>
+        <div class="expand-panel">
+          <h5>Architecture</h5>
+          <p>Planner Agent → Executor Agents (tool-calling) → Memory Module (vector store) → Critic Agent for output validation → Result aggregator. Built with LangChain LCEL and OpenAI function calling.</p>
+          <h5>Key Challenges</h5>
+          <p>Handling agent loops and infinite recursion; designing robust inter-agent communication protocol; achieving consistent results across different LLM backends.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: AI Career Intelligence Platform -->
+    <article class="project-card reveal reveal-delay-2" data-tags="python ai/ml llm web nlp react nodejs">
+      <div class="project-img">
+        <!-- Upload AI Career Platform image here -->
+        <img src="images/ai-career.jpg" alt="AI Career Intelligence Platform"
+             onerror="this.parentElement.innerHTML='<div style=\'display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-dim);padding:2rem;\'><span style=\'font-size:2.5rem;\'>💼</span><span style=\'font-size:0.8rem;\'>AI Career</span></div>';" />
+      </div>
+      <div class="project-body">
+        <h3>AI Career Intelligence Platform</h3>
+        <p>NLP-based skill extraction generating portfolio insights and personalized career recommendations. Full-stack prototype with LLM summarization, reducing manual input by ~40%.</p>
+        <div class="tags-wrap">
+          <span class="tag">Python</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">NLP</span>
+          <span class="tag">LLM</span>
+        </div>
+        <div class="project-actions">
+          <!-- Add GitHub link here -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="github-career">
+            🐙 GitHub <!-- Replace with actual link -->
+          </a>
+          <button class="btn btn-sm btn-expand" style="background:rgba(0,102,255,0.1);border:1px solid var(--border-subtle);color:var(--text-muted);border-radius:var(--radius-full);cursor:pointer;font-family:var(--font-body);">
+            View Details ▼
+          </button>
+        </div>
+        <div class="expand-panel">
+          <h5>Architecture</h5>
+          <p>React frontend → Node.js API → Python NLP service (spaCy + custom skill extractor) → LLM summarization (OpenAI) → MySQL for user profiles & recommendations.</p>
+          <h5>Key Challenges</h5>
+          <p>Domain-specific skill entity recognition; reducing hallucination in career recommendations; connecting a polyglot stack (JS + Python) via internal REST APIs.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 4: Employee Payroll Management System -->
+    <article class="project-card reveal reveal-delay-3" data-tags="java web mysql">
+      <div class="project-img">
+        <!-- Upload Payroll System image here -->
+        <img src="images/payroll.jpg" alt="Employee Payroll Management System"
+             onerror="this.parentElement.innerHTML='<div style=\'display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-dim);padding:2rem;\'><span style=\'font-size:2.5rem;\'>📊</span><span style=\'font-size:0.8rem;\'>Payroll System</span></div>';" />
+      </div>
+      <div class="project-body">
+        <h3>Employee Payroll Management System</h3>
+        <p>Payroll system with secure employee records and automated salary computation, reducing processing time by approximately 40%.</p>
+        <div class="tags-wrap">
+          <span class="tag">Java</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="project-actions">
+          <!-- Add GitHub link here -->
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="github-payroll">
+            🐙 GitHub <!-- Replace with actual link -->
+          </a>
+          <button class="btn btn-sm btn-expand" style="background:rgba(0,102,255,0.1);border:1px solid var(--border-subtle);color:var(--text-muted);border-radius:var(--radius-full);cursor:pointer;font-family:var(--font-body);">
+            View Details ▼
+          </button>
+        </div>
+        <div class="expand-panel">
+          <h5>Architecture</h5>
+          <p>Java Servlet/JSP MVC pattern → MySQL database for employee records → Role-based access (Admin / HR / Employee) → Automated tax & deduction computation engine.</p>
+          <h5>Key Challenges</h5>
+          <p>Implementing accurate payroll computation for multiple pay structures; securing sensitive employee data; building a clean admin dashboard within pure Java web stack.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>

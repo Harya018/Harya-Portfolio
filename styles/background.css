@@ -1,0 +1,28 @@
+/* =============================================
+   BACKGROUND.CSS — Canvas & z-index layering
+   ============================================= */
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  pointer-events: none;
+  display: block;
+}
+
+/* Everything above the canvas */
+#app-shell {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-content {
+  flex: 1;
+  padding-top: var(--navbar-h);
+}

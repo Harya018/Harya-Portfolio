@@ -1,0 +1,112 @@
+<!-- HOME PAGE — pages/home.html -->
+<!-- Upload your profile photo here: images/harya-profile.jpg -->
+
+<section class="hero-section">
+  <!-- Bloom decorations -->
+  <div class="bloom bloom-blue" style="width:600px;height:600px;top:-100px;left:50%;transform:translateX(-50%);opacity:0.8;"></div>
+
+  <div class="hero-content">
+    <!-- Profile Photo -->
+    <div class="profile-ring">
+      <!-- Upload your profile photo here -->
+      <img src="images/harya-avatar.jpg?v=2" alt="Harya C R"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="profile-placeholder" style="display:none;">
+        <span style="font-size:3.5rem;">👤</span>
+      </div>
+    </div>
+
+    <!-- Status Badge -->
+    <div class="hero-badges">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span>
+        Open to AI/ML Internships
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="hero-greeting">
+      Hi, I'm <span class="hero-name">Harya C R</span>
+    </h1>
+
+    <!-- Typewriter -->
+    <div class="typewriter-wrap">
+      <span id="typewriter-text" class="typewriter-text"></span>
+      <span class="typewriter-cursor" aria-hidden="true"></span>
+    </div>
+
+    <!-- Bio -->
+    <p class="hero-bio">
+      AI/ML undergraduate passionate about multi-agent systems, LLM applications,
+      and computer vision. Building intelligent automation for healthcare and beyond.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="hero-cta">
+      <a class="btn btn-primary" data-page="tech-projects" href="#tech-projects" id="cta-projects">
+        🚀 View My Projects
+      </a>
+      <a class="btn btn-outline" data-page="contact" href="#contact" id="cta-contact">
+        💬 Get In Touch
+      </a>
+    </div>
+
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Stat Counters -->
+<section class="stats-section" aria-label="Quick stats">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-item">
+        <span class="stat-number" data-count="4" data-suffix="+">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="1" data-suffix="">0</span>
+        <span class="stat-label">Internship</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="5" data-suffix="+">0</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="5" data-suffix="">0</span>
+        <span class="stat-label">Languages</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Tech Strip -->
+<section class="section-sm">
+  <div class="container text-center">
+    <p style="font-size:0.8rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;">Built With</p>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;">
+      <span class="tag">Python</span>
+      <span class="tag">PyTorch</span>
+      <span class="tag">LangChain</span>
+      <span class="tag">React</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Flask</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Java</span>
+      <span class="tag">Git</span>
+      <span class="tag">Figma</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Trigger typewriter for home page
+  (function() {
+    const tw = document.getElementById('typewriter-text');
+    if (tw && window.initPage) window.initPage('home');
+  })();
+</script>

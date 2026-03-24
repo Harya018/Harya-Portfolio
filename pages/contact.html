@@ -1,0 +1,144 @@
+<!-- CONTACT PAGE — pages/contact.html -->
+
+<div class="container section">
+
+  <!-- Page Header -->
+  <div class="section-header reveal text-center" style="margin-bottom:3rem;">
+    <p style="color:var(--accent-blue);font-size:0.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;">Get In Touch</p>
+    <h1 class="contact-hero-title">
+      Let's Build <span>Something Together</span>
+    </h1>
+    <p style="color:var(--text-muted);margin-top:1.25rem;font-size:1.05rem;">
+      Whether it's an AI project, collaboration, or just a chat — I'm all ears.
+    </p>
+  </div>
+
+  <!-- Contact Layout -->
+  <div class="contact-layout">
+
+    <!-- Left: Form -->
+    <div class="reveal">
+      <form class="contact-form" id="contact-form" novalidate>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="cf-name">Your Name *</label>
+          <input type="text" id="cf-name" name="name" placeholder="e.g. Jane Smith" autocomplete="name" />
+          <span class="error-msg" id="cf-name-error" role="alert"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="cf-email">Email Address *</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" />
+          <span class="error-msg" id="cf-email-error" role="alert"></span>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="cf-subject">Subject *</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="e.g. Collaboration opportunity" />
+          <span class="error-msg" id="cf-subject-error" role="alert"></span>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="cf-message">Message *</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or idea..."></textarea>
+          <span class="error-msg" id="cf-message-error" role="alert"></span>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-submit" id="submit-btn">
+          Send Message →
+        </button>
+
+      </form>
+
+      <!-- Success Message -->
+      <div class="success-msg" id="form-success" role="status" aria-live="polite">
+        ✅ Message sent! I'll get back to you within 24 hours.
+      </div>
+    </div>
+
+    <!-- Right: Info Block -->
+    <div class="reveal reveal-delay-2">
+
+      <!-- Contact Info Items -->
+      <div class="contact-info-block">
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📧</div>
+          <div class="contact-info-text">
+            <strong>Email</strong>
+            <a href="mailto:haryacr@gmail.com">haryacr@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💼</div>
+          <div class="contact-info-text">
+            <strong>LinkedIn</strong>
+            <a href="https://linkedin.com/in/haryacr" target="_blank" rel="noopener">linkedin.com/in/haryacr</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🐙</div>
+          <div class="contact-info-text">
+            <strong>GitHub</strong>
+            <a href="https://github.com/Harya018" target="_blank" rel="noopener">github.com/Harya018</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div class="contact-info-text">
+            <strong>Location</strong>
+            <span>Chennai, India</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Animated Social Buttons -->
+      <div class="social-icon-row">
+
+        <a href="https://github.com/Harya018" target="_blank" rel="noopener"
+           class="social-icon-btn sib-github" id="social-github" aria-label="GitHub profile">
+          <span class="sib-icon">🐙</span>
+          <span class="sib-label">GitHub</span>
+        </a>
+
+        <a href="https://linkedin.com/in/haryacr" target="_blank" rel="noopener"
+           class="social-icon-btn sib-linkedin" id="social-linkedin" aria-label="LinkedIn profile">
+          <span class="sib-icon">💼</span>
+          <span class="sib-label">LinkedIn</span>
+        </a>
+
+        <a href="mailto:haryacr@gmail.com"
+           class="social-icon-btn sib-instagram" id="social-email" aria-label="Send email">
+          <span class="sib-icon">📧</span>
+          <span class="sib-label" style="color:inherit;">Email</span>
+        </a>
+
+      </div>
+
+      <!-- Response Note -->
+      <div class="response-note">
+        <span>🕐</span>
+        I typically respond within 24 hours.
+      </div>
+
+      <!-- Status Badge -->
+      <div style="margin-top:1.5rem;">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          Open to AI/ML opportunities
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

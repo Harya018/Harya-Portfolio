@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harya C R — AI/ML Portfolio</title>
+  <meta name="description" content="Harya C R — AI/ML undergraduate at SRM, Chennai. Specialising in multi-agent systems, LLM applications, and computer vision." />
+  <meta name="keywords" content="Harya C R, AI ML portfolio, machine learning, LangChain, PyTorch, multi-agent, SRM Chennai" />
+  <meta name="author" content="Harya C R" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Harya C R — AI/ML Portfolio" />
+  <meta property="og:description" content="AI/ML undergraduate building intelligent automation for healthcare and beyond." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/background.css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ── App Shell ───────────────────────────────────────────── -->
+  <div id="app-shell">
+
+    <!-- ── Navigation ─────────────────────────────────────────── -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-inner">
+
+        <!-- Logo -->
+        <a class="nav-logo" data-page="home" href="#home" aria-label="Go to home">&lt;HCR/&gt;</a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a role="menuitem" data-page="home"            href="#home">Home</a></li>
+          <li role="none"><a role="menuitem" data-page="education"       href="#education">Education</a></li>
+          <li role="none"><a role="menuitem" data-page="tech-projects"   href="#tech-projects">Tech Projects</a></li>
+          <li role="none"><a role="menuitem" data-page="design-projects" href="#design-projects">Design Projects</a></li>
+          <li role="none"><a role="menuitem" data-page="about"           href="#about">About Me</a></li>
+          <li role="none"><a role="menuitem" data-page="contact"         href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <ul>
+        <li><a data-page="home"            href="#home">Home</a></li>
+        <li><a data-page="education"       href="#education">Education</a></li>
+        <li><a data-page="tech-projects"   href="#tech-projects">Tech Projects</a></li>
+        <li><a data-page="design-projects" href="#design-projects">Design Projects</a></li>
+        <li><a data-page="about"           href="#about">About Me</a></li>
+        <li><a data-page="contact"         href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- ── Page Content ───────────────────────────────────────── -->
+    <main id="page-content" role="main">
+      <!-- Pages injected here by router.js -->
+    </main>
+
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- Scripts (order matters) -->
+  <script src="scripts/background.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/router.js"></script>
+
+</body>
+</html>

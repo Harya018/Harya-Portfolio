@@ -1,0 +1,164 @@
+<!-- ABOUT ME PAGE — pages/about.html -->
+
+<div class="container section">
+
+  <!-- Page Header -->
+  <div class="section-header reveal text-center">
+    <p style="color:var(--accent-blue);font-size:0.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Who I Am</p>
+    <h1 class="section-title">About <span>Me</span></h1>
+    <div class="title-underline" style="margin:0.5rem auto 0;"></div>
+  </div>
+
+  <!-- Split Layout -->
+  <div class="about-split section-sm" style="padding-top:0;">
+
+    <!-- Left: Photo -->
+    <div class="about-photo-wrap reveal">
+      <div class="about-photo-frame">
+        <!-- Upload about page photo here -->
+        <img src="images/harya-about.jpg" alt="Harya C R"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="about-photo-placeholder" style="display:none;">👤</div>
+      </div>
+
+      <!-- Social links below photo -->
+      <div class="social-links-about" style="margin-top:1.5rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://github.com/Harya018" target="_blank" rel="noopener" class="social-link-btn" id="about-github">
+          🐙 GitHub
+        </a>
+        <a href="https://linkedin.com/in/haryacr" target="_blank" rel="noopener" class="social-link-btn" id="about-linkedin">
+          💼 LinkedIn
+        </a>
+        <a href="mailto:haryacr@gmail.com" class="social-link-btn" id="about-email">
+          📧 Email
+        </a>
+      </div>
+
+      <!-- Resume Download -->
+      <div style="margin-top:1rem;text-align:center;">
+        <!-- Link your resume PDF here: replace # with actual path -->
+        <a href="#" class="btn btn-primary" id="resume-download" download>
+          📄 Download Resume
+          <!-- Replace # with actual resume PDF path -->
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="reveal reveal-delay-1">
+
+      <!-- Bio -->
+      <p style="font-size:1.05rem;line-height:1.85;color:var(--text-muted);margin-bottom:2rem;">
+        I'm <strong style="color:var(--text-primary);">Harya C R</strong>, an AI/ML undergraduate at SRM Institute of Science and Technology, Chennai, specializing in multi-agent systems, LLM applications, and computer vision. Passionate about building intelligent automation for healthcare and real-world AI products. Beyond code, I bring a creative edge through graphic design — blending technology and aesthetics.
+      </p>
+
+      <!-- Tech Skills -->
+      <div class="skill-cloud-section">
+        <h4 class="cloud-label">Tech Skills</h4>
+        <div class="skill-cloud">
+          <span class="skill-chip chip-blue chip-d1">Python</span>
+          <span class="skill-chip chip-pink chip-d2">PyTorch</span>
+          <span class="skill-chip chip-green chip-d3">LangChain</span>
+          <span class="skill-chip chip-blue chip-d4">C/C++</span>
+          <span class="skill-chip chip-purple chip-d5">Scikit-learn</span>
+          <span class="skill-chip chip-blue chip-d6">Flask</span>
+          <span class="skill-chip chip-pink chip-d7">Java</span>
+          <span class="skill-chip chip-green chip-d8">SQL</span>
+          <span class="skill-chip chip-purple chip-d9">JavaScript</span>
+          <span class="skill-chip chip-blue chip-d10">React</span>
+        </div>
+      </div>
+
+      <!-- Design Skills -->
+      <div class="skill-cloud-section" style="margin-top:2rem;">
+        <h4 class="cloud-label">Design Skills</h4>
+        <div class="skill-cloud">
+          <span class="skill-chip chip-pink chip-d1">Figma</span>
+          <span class="skill-chip chip-blue chip-d2">Photoshop</span>
+          <span class="skill-chip chip-purple chip-d3">Illustrator</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tech Stack Icon Wall -->
+  <div class="section-sm" style="padding-top:0;">
+    <h3 style="margin-bottom:1.25rem;font-size:1rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:1px;">Tech Stack</h3>
+    <div class="icon-wall reveal">
+      <div class="icon-item">🐍<span class="tooltip">Python</span></div>
+      <div class="icon-item" style="font-size:1rem;font-family:var(--font-mono);">C++<span class="tooltip">C++</span></div>
+      <div class="icon-item">☕<span class="tooltip">Java</span></div>
+      <div class="icon-item">🔥<span class="tooltip">PyTorch</span></div>
+      <div class="icon-item" style="font-size:0.9rem;font-weight:700;color:var(--accent-cyan);">LC<span class="tooltip">LangChain</span></div>
+      <div class="icon-item" style="font-size:1rem;color:#61DAFB;">⚛<span class="tooltip">React</span></div>
+      <div class="icon-item" style="font-size:0.9rem;color:#6DA55F;font-family:var(--font-mono);">Node<span class="tooltip">Node.js</span></div>
+      <div class="icon-item">🗄️<span class="tooltip">MySQL</span></div>
+      <div class="icon-item" style="font-size:0.9rem;font-family:var(--font-mono);color:#f05032;">Git<span class="tooltip">Git</span></div>
+      <div class="icon-item">🐙<span class="tooltip">GitHub</span></div>
+      <div class="icon-item" style="font-size:0.9rem;font-family:var(--font-mono);color:#007ACC;">VS<span class="tooltip">VS Code</span></div>
+      <div class="icon-item" style="font-size:0.9rem;color:#f24e1e;font-family:var(--font-mono);">Fig<span class="tooltip">Figma</span></div>
+    </div>
+  </div>
+
+  <!-- Fun Facts -->
+  <div class="section-sm" style="padding-top:0;">
+    <h3 style="margin-bottom:1.25rem;font-size:1rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:1px;">Fun Facts</h3>
+    <div class="fun-facts reveal">
+      <div class="fun-fact-item">🤖 Obsessed with multi-agent systems</div>
+      <div class="fun-fact-item">☕ Runs on coffee and curiosity</div>
+      <div class="fun-fact-item">🏥 AI for healthcare is my mission</div>
+      <div class="fun-fact-item">🎨 Designer by creativity, engineer by logic</div>
+    </div>
+  </div>
+
+  <!-- Journey Timeline -->
+  <div class="section-sm" style="padding-top:0;">
+    <h3 style="margin-bottom:1.5rem;font-size:1rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:1px;">My Journey</h3>
+    <div class="journey-timeline reveal">
+      <div class="journey-step">
+        <div class="journey-dot">24</div>
+        <div class="journey-text">
+          <strong>2024</strong>
+          Started B.Tech at SRM Chennai
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-dot">25</div>
+        <div class="journey-text">
+          <strong>2025</strong>
+          AI Internship at Omega Healthcare
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-dot">25</div>
+        <div class="journey-text">
+          <strong>Sep 2025</strong>
+          Co-Head, Cintel Student Association
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-dot">26</div>
+        <div class="journey-text">
+          <strong>Feb 2026</strong>
+          Head of Creatives, Cintel Student Association
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-dot">26</div>
+        <div class="journey-text">
+          <strong>2026</strong>
+          Active AI Research
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-dot">28</div>
+        <div class="journey-text">
+          <strong>2028</strong>
+          Target Graduation
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
